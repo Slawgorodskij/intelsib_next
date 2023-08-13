@@ -1,0 +1,1 @@
+export {FeedbackCard} from '@/components/UI/FeedbackCard/FeedbackCard'

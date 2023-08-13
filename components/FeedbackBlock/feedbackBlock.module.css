@@ -1,0 +1,14 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+@media (min-width: 577px) {
+
+}
+
+@media (min-width: 1200px) {
+
+
+}

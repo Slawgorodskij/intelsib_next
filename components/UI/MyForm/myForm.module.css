@@ -1,0 +1,18 @@
+
+.button {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.text {
+    text-align: center;
+    font-size: 10px;
+    line-height: 17px;
+}
+
+.text_color {
+    color: var(--color-font-active);
+}

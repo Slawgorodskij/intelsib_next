@@ -1,0 +1,26 @@
+.rectangle {
+    position: absolute;
+    stroke: var(--color-font-active);
+    stroke-dasharray: 19 19;
+    animation: pulsation 2s infinite;
+}
+
+.rectangle:hover {
+    animation: none;
+    stroke-dasharray: none;
+}
+
+@keyframes pulsation {
+    0% {
+        stroke: var(--color-font-active);
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+        stroke: var(--color-white);
+    }
+    100% {
+        stroke: var(--color-font-active);
+        opacity: 1;
+    }
+}

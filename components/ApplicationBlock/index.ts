@@ -1,0 +1,1 @@
+export {ApplicationBlock} from '@/components/ApplicationBlock/ApplicationBlock'

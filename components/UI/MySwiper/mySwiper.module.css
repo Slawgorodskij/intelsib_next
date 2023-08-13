@@ -1,0 +1,21 @@
+.icon {
+    color: #E73331;
+    font-size: 27px;
+}
+
+.block_button {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.numeric {
+    color: var(--color-font-active);
+}
+
+@media (min-width: 1200px) {
+    .block_button {
+        width: 105%;
+    }
+}

@@ -1,0 +1,28 @@
+.bottom {
+    padding: 40px 0 100px;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-font-grey);
+    font-size: 14px;
+    line-height: 170%;
+}
+
+.icon {
+    font-size: 22px;
+}
+
+.icon:hover {
+    color: var(--color-font-hover);
+}
+
+.icon_mr-15 {
+    margin-right: 15px;
+}
+
+
+@media (min-width: 1200px) {
+    .bottom {
+        flex-direction: row;
+        gap: 30px;
+    }
+}

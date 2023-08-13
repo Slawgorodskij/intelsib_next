@@ -1,0 +1,1 @@
+export {BlockCase} from '@/components/BlockCase/BlockCase'

@@ -1,0 +1,159 @@
+.wrapper {
+    padding-bottom: 130px;
+}
+
+.title {
+    margin-bottom: 40px;
+}
+
+.block_description {
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.text_weight {
+    font-family: var(--font-helvetica-bold);
+}
+
+.book {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    align-items: center;
+}
+
+.image {
+    margin-top: 35px;
+}
+
+.emblem {
+    display: none;
+    opacity: 0;
+}
+
+.description_text {
+    font-size: 11px;
+    color: var(--color-font-grey);
+}
+
+.list {
+    margin-top: 35px;
+    margin-bottom: 55px;
+    padding-left: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.list_item {
+    position: relative;
+    color: var(--color-font);
+}
+
+.list_item:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 12px;
+    left: -20px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: var(--color-font);
+}
+@media (min-width: 577px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        column-gap: 40px;
+    }
+
+    .title {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .block_description {
+        margin-bottom: 40px;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .book {
+        grid-row-start: 3;
+    }
+
+    .image {
+        margin-top: 0;
+        width: 107px;
+        height: 156px;
+    }
+
+    .book_description {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .list {
+        margin: 0;
+    }
+
+    .block_form {
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+        grid-template-columns: 7.5fr 4.5fr;
+        column-gap: 50px;
+    }
+
+    .title {
+        grid-column-end: 2;
+        position: relative;
+    }
+
+    .title:after {
+        position: absolute;
+        content: url("/svg/arrow_application.svg");
+        display: block;
+        bottom: -15px;
+        right: -100px;
+        height: 100%;
+    }
+
+    .block_description {
+        margin-bottom: 35px;
+        grid-column-end: 2;
+    }
+
+    .book {
+        margin-bottom: 20px;
+        grid-template-rows: 1fr 0.5fr;
+    }
+
+    .image {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        width: 120px;
+        height: 175px;
+    }
+
+    .emblem {
+        display: block;
+        opacity: 1;
+    }
+
+    .list {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+    }
+
+    .block_form {
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+}

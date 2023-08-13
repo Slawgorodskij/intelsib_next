@@ -1,0 +1,1 @@
+export {MobileAccordion} from "@/components/UI/MobileAccordion/MobileAccordion";

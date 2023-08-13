@@ -1,0 +1,437 @@
+/*==== Первый слайд ====*/
+.first_rectangle_first_slide {
+    top: -8px;
+    left: 3px;
+    width: 25px;
+    height: 25px;
+    grid-row-start: 6;
+    grid-column-start: 8;
+}
+
+.first_wrapper_first_slide:hover .first_tooltip_first_slide {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    bottom: 106px;
+    right: 30px;
+    width: 256px;
+}
+
+.second_rectangle_first_slide {
+    top: 0px;
+    left: -1px;
+    width: 30px;
+    height: 30px;
+    grid-row-start: 8;
+    grid-column-start: 11;
+}
+
+.second_wrapper_first_slide:hover .second_tooltip_first_slide {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    bottom: 59px;
+    right: 43px;
+    width: 256px;
+}
+
+/*==== Второй слайд ====*/
+
+.first_rectangle_second_slide {
+    top: 0;
+    left: -12px;
+    width: 25px;
+    height: 25px;
+    grid-row-start: 4;
+    grid-column-start: 4;
+}
+
+.first_wrapper_second_slide:hover .first_tooltip_second_slide {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    bottom: 40px;
+    right: 0;
+    width: 296px;
+}
+
+.second_rectangle_second_slide {
+    top: -11px;
+    left: -2px;
+    width: 37px;
+    height: 37px;
+    grid-row-start: 7;
+    grid-column-start: 4;
+}
+
+.second_wrapper_second_slide:hover .second_tooltip_second_slide {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    bottom: 97px;
+    right: -1px;
+    width: 300px;
+}
+
+.third_rectangle_second_slide {
+    top: -5px;
+    left: 8px;
+    width: 25px;
+    height: 25px;
+    grid-row-start: 5;
+    grid-column-start: 6;
+}
+
+.third_wrapper_second_slide:hover .third_tooltip_second_slide {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    bottom: -2px;
+    right: -1px;
+    width: 300px;
+}
+
+/*==== Третий слайд ====*/
+
+.first_rectangle_third_slide {
+    top: -15px;
+    left: -7px;
+    width: 40px;
+    height: 40px;
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.first_wrapper_third_slide:hover .first_tooltip_third_slide {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    bottom: 3px;
+    right: 0;
+    width: 255px;
+}
+
+.second_rectangle_third_slide {
+    top: -6px;
+    left: -15px;
+    width: 35px;
+    height: 35px;
+    grid-row-start: 3;
+    grid-column-start: 10;
+}
+
+.second_wrapper_third_slide:hover .second_tooltip_third_slide {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    bottom: 5px;
+    right: 1px;
+    width: 292px;
+}
+
+.third_rectangle_third_slide {
+    top: -10px;
+    left: -6px;
+    width: 25px;
+    height: 25px;
+    grid-row-start: 9;
+    grid-column-start: 8;
+}
+
+.third_wrapper_third_slide:hover .third_tooltip_third_slide {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    bottom: -9px;
+    right: -1px;
+    width: 300px;
+}
+
+.fourth_rectangle_third_slide {
+    top: -1px;
+    left: 33px;
+    width: 19px;
+    height: 19px;
+    grid-row-start: 10;
+    grid-column-start: 7;
+}
+
+.fourth_wrapper_third_slide:hover .fourth_tooltip_third_slide {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    bottom: -9px;
+    right: -1px;
+    width: 300px;
+}
+
+/*==== Управление ====*/
+.block_button {
+    display: none;
+    overflow: hidden;
+}
+
+/*==== Адаптив ====*/
+
+@media (min-width: 577px) {
+    .image {
+        width: 418px;
+        height: 264px;
+    }
+
+    .image_teeth {
+        width: 418px;
+        height: 265px;
+    }
+
+    /*==== Первый слайд ====*/
+    .first_rectangle_first_slide {
+        top: -15px;
+        left: 8px;
+        width: 30px;
+        height: 30px;
+        grid-row-start: 7;
+    }
+
+    .first_wrapper_first_slide:hover .first_tooltip_first_slide {
+        bottom: 149px;
+        right: 9px;
+        width: 300px;
+    }
+
+    .second_rectangle_first_slide {
+        top: 12px;
+        left: 0;
+        width: 37px;
+        height: 37px;
+    }
+
+    .second_wrapper_first_slide:hover .second_tooltip_first_slide {
+        bottom: 10px;
+        right: 73px;
+        width: 300px;
+    }
+
+    /*==== Второй слайд ====*/
+    .first_rectangle_second_slide {
+        left: -8px;
+        grid-row-start: 5;
+    }
+
+    .first_wrapper_second_slide:hover .first_tooltip_second_slide {
+        bottom: 40px;
+        right: 0;
+        width: 300px;
+    }
+
+    .second_rectangle_second_slide {
+        top: -15px;
+        left: 3px;;
+        grid-row-start: 8;
+    }
+
+    .second_wrapper_second_slide:hover .second_tooltip_second_slide {
+        bottom: 2px;
+        right: 93px;
+    }
+
+    .third_rectangle_second_slide {
+        top: -10px;
+        left: 19px;
+        grid-row-start: 6;
+    }
+
+    .third_wrapper_second_slide:hover .third_tooltip_second_slide {
+        bottom: 34px;
+        right: 20px;
+    }
+
+    /*==== Третий слайд ====*/
+    .first_rectangle_third_slide {
+        left: -2px;
+        width: 50px;
+        height: 50px;
+        grid-row-start: 2;
+    }
+
+    .first_wrapper_third_slide:hover .first_tooltip_third_slide {
+        bottom: 64px;
+        right: 106px;
+        width: 300px;
+    }
+
+    .second_rectangle_third_slide {
+        grid-row-start: 4;
+    }
+
+    .second_wrapper_third_slide:hover .second_tooltip_third_slide {
+        bottom: 47px;
+        right: 8px;
+        width: 300px;;
+    }
+
+    .third_rectangle_third_slide {
+        top: -28px;
+        width: 35px;
+        height: 35px;
+        grid-row-start: 10;
+    }
+
+    .third_wrapper_third_slide:hover .third_tooltip_third_slide {
+        bottom: 63px;
+        right: 112px;
+
+    }
+
+    .fourth_rectangle_third_slide {
+        top: -13px;
+        left: 50px;
+        grid-row-start: 11;
+    }
+
+    .fourth_wrapper_third_slide:hover .fourth_tooltip_third_slide {
+        bottom: 63px;
+        right: 112px;
+    }
+
+    /*==== Управление ====*/
+    .block_button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: visible;
+    }
+
+    .icon {
+        color: #E73331;
+        font-size: 27px;
+    }
+
+    .button_prev,
+    .button_next {
+        position: relative;
+        bottom: 170px;
+    }
+
+    .button_prev {
+        right: 65px;
+    }
+
+    .button_next {
+        left: 65px;
+    }
+}
+
+@media (min-width: 850px) {
+    .image {
+        width: 490px;
+        height: 312px;
+    }
+
+    .image_teeth {
+        width: 493px;
+        height: 313px;
+    }
+
+    /*==== Первый слайд ====*/
+    .first_rectangle_first_slide {
+        top: -19px;
+        left: 9px;
+        width: 37px;
+        height: 37px;
+    }
+
+    .first_wrapper_first_slide:hover .first_tooltip_first_slide {
+        bottom: 178px;
+    }
+
+    .second_rectangle_first_slide {
+        top: 9px;
+        left: -4px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .second_wrapper_first_slide:hover .second_tooltip_first_slide {
+        right: 89px;
+    }
+
+    /*==== Второй слайд ====*/
+    .first_rectangle_second_slide {
+        top: 2px;
+        left: -7px;
+        width: 26px;
+        height: 26px;
+    }
+
+    .first_wrapper_second_slide:hover .first_tooltip_second_slide {
+        bottom: 120px;
+        right: 48px;
+    }
+
+    .second_rectangle_second_slide {
+        width: 47px;
+        height: 47px;
+    }
+
+    .second_wrapper_second_slide:hover .second_tooltip_second_slide {
+        bottom: 11px;
+        right: 165px;
+    }
+
+    .third_rectangle_second_slide {
+        left: 26px;
+        width: 26px;
+        height: 26px;
+    }
+
+    .third_wrapper_second_slide:hover .third_tooltip_second_slide {
+        bottom: 194px;
+    }
+
+    /*==== Третий слайд ====*/
+    .first_rectangle_third_slide {
+        left: 2px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .first_wrapper_third_slide:hover .first_tooltip_third_slide {
+        bottom: 105px;
+        right: 163px;
+    }
+
+    .second_rectangle_third_slide {
+        top: -8px;
+        width: 41px;
+        height: 41px;
+    }
+
+    .second_wrapper_third_slide:hover .second_tooltip_third_slide {
+        bottom: 80px;
+    }
+
+    .third_rectangle_third_slide {
+        top: -33px;
+        left: -8px;
+        width: 41px;
+        height: 41px;
+    }
+
+    .third_wrapper_third_slide:hover .third_tooltip_third_slide {
+        bottom: 113px;
+        right: 191px;
+    }
+
+    .fourth_rectangle_third_slide {
+        top: -18px;
+        left: 58px;
+        width: 27px;
+        height: 27px;
+    }
+
+    .fourth_wrapper_third_slide:hover .fourth_tooltip_third_slide {
+        bottom: 28px;
+        right: 191px;
+    }
+}

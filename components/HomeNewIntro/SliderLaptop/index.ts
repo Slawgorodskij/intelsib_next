@@ -1,0 +1,1 @@
+export {SliderLaptop} from '@/components/HomeNewIntro/SliderLaptop/SliderLaptop'

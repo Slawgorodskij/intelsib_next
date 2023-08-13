@@ -1,0 +1,1 @@
+export {HomeNewIntro} from '@/components/HomeNewIntro/HomeNewIntro'

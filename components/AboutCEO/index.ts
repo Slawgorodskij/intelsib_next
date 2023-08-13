@@ -1,0 +1,1 @@
+export {AboutCEO} from '@/components/AboutCEO/AboutCEO'

@@ -1,0 +1,129 @@
+.top {
+    display: none;
+    overflow: hidden;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 14px;
+}
+
+@media (min-width: 577px) {
+    .top {
+        display: block;
+        overflow: visible;
+        border-bottom: 1px solid var(--color-grey);
+    }
+
+    .list {
+        padding: 0;
+    }
+
+    .link {
+        padding: 14px 0;
+        display: block;
+        font-size: 16px;
+        color: var(--color-font);
+    }
+
+    .link_active {
+        color: var(--color-font-active)
+    }
+
+    .link:hover {
+        color: var(--color-font-hover);
+    }
+
+    .tab {
+        position: relative;
+    }
+
+    .navigate_icon {
+        margin-left: 8px;
+        color: var(--color-font-active);
+    }
+
+    .sub_list {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .sub_link {
+        display: block;
+        padding: 14px 12px;
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--color-font);
+    }
+
+    .sub_link_active {
+        color: var(--color-font-active);
+    }
+
+    .sub_link:hover {
+        color: var(--color-font-hover);
+    }
+
+
+    .tab:hover .sub_list {
+        position: absolute;
+        top: 40px;
+        left: -90px;
+        padding: 15px 30px 30px;
+        display: block;
+        width: 305px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+        background-color: var(--color-white);
+        box-shadow: var(--box-shadow);
+        z-index: var(--z-modal);
+    }
+
+    .icon {
+        margin-right: 8px;
+        color: var(--color-font-active);
+    }
+
+    .text {
+        color: var(--color-font);
+    }
+
+    .text:hover {
+        color: var(--color-font-hover);
+    }
+}
+
+@media (min-width: 1200px) {
+    .top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .link {
+        padding: 14px 12px;
+    }
+
+    .link_pd {
+        padding: 9px 12px 12px !important;
+    }
+
+    .tab:hover .sub_list {
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 588px;
+    }
+
+    .info {
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .book {
+        padding: 12px 0;
+    }
+}

@@ -1,0 +1,73 @@
+.title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.block {
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block_text {
+    position: relative;
+
+}
+
+.block_text::before {
+    position: absolute;
+    content: url("/svg/quotation_marks_left.svg");
+    display: block;
+    top: 18px;
+    left: -20px;
+    height: 100%;
+}
+
+.block_text::after {
+    position: absolute;
+    content: url("/svg/quotation_marks_left.svg");
+    transform: rotateZ(180deg);
+    display: block;
+    bottom: 55px;
+    right: -20px;
+    height: 100%;
+}
+
+.image {
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.sign {
+    display: block;
+    margin-left: auto;
+}
+
+@media (min-width: 577px) {
+    .block_text {
+        padding-left: 20px;
+    }
+
+    .block_text::before {
+        top: 2px;
+    }
+
+    .sign {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .block {
+        padding: 0;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .block_text {
+        flex: 0 0 70%;
+    }
+
+}

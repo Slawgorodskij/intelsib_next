@@ -1,0 +1,1 @@
+export {FeedbackSwiper} from '@/components/FeedbackSwiper/FeedbackSwiper'

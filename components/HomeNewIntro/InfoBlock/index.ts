@@ -1,0 +1,1 @@
+export {InfoBlock} from '@/components/HomeNewIntro/InfoBlock/InfoBlock'

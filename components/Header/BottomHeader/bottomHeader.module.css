@@ -1,0 +1,138 @@
+.bottom {
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 14px;
+    align-items: center;
+}
+
+.logo {
+    padding: 20px 0;
+    grid-column: span 4;
+}
+
+.slider {
+    display: none;
+    visibility: hidden;
+}
+
+.feedback {
+    grid-column: span 7;
+    text-align: right;
+}
+
+.link {
+    display: block;
+}
+
+.icon {
+    display: none;
+}
+
+.text_top {
+    font-family: var(--font-helvetica-light);
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-font);
+}
+
+.text_bottom {
+    font-size: 10px;
+    color: var(--color-font);
+}
+
+.button_wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    display: none;
+    visibility: hidden;
+}
+
+@media (min-width: 577px) {
+    .logo {
+        grid-row-start: 1;
+        grid-column: span 4;
+    }
+
+    .slider {
+        grid-column-start: -3;
+        grid-column-end: -9;
+        display: block;
+        max-width: 400px;
+        visibility: visible;
+    }
+
+    .feedback {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column: span 5;
+        text-align: left;
+    }
+
+    .icon {
+        display: inline-block;
+        margin-right: 8px;
+        color: var(--color-font-active);
+    }
+
+    .text_top {
+        font-family: var(--font-helvetica);
+        font-weight: 400;
+    }
+
+    .text_bottom {
+        font-size: 14px;
+    }
+
+    .button_wrapper {
+        grid-row-start: 2;
+        grid-column-start: -1;
+        grid-column-end: -7;
+    }
+
+    .button {
+        padding: 16px;
+        display: block;
+        visibility: visible;
+        min-width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .bottom {
+        gap: 40px;
+    }
+
+    .logo {
+        grid-row-start: 1;
+        grid-column: span 2;
+    }
+
+    .slider {
+        grid-row-start: 1;
+        grid-column-start: 3;
+        grid-column-end: 8;
+    }
+
+    .feedback {
+        /*padding-left: 24px;*/
+        grid-row-start: 1;
+        grid-column-start: -6;
+        grid-column-end: -4;
+    }
+
+    .button_wrapper {
+        grid-row-start: 1;
+        grid-column-start: -1;
+        grid-column-end: -4;
+    }
+
+    .button {
+        padding: 16px 8px;
+        min-width: 100%;
+    }
+}
+

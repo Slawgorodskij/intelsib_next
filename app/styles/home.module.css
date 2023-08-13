@@ -1,0 +1,18 @@
+
+.cards {
+    position: relative;
+    bottom: 59px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+@media (min-width: 577px) {
+
+}
+
+@media (min-width: 1200px) {
+    .cards {
+        flex-direction: row;
+    }
+}

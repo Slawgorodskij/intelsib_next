@@ -1,0 +1,14 @@
+.title {
+    margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+    .feedback_prev,
+    .feedback_next {
+        position: relative;
+        top: -200px;
+    }
+
+    .feedback_prev {
+        left: -50px;
+    }
+}

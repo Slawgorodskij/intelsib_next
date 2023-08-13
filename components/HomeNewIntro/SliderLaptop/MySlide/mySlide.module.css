@@ -1,0 +1,23 @@
+.slide {
+    position: relative;
+}
+
+.hover {
+    position: absolute;
+    top: 15px;
+    right: 1px;
+    bottom: 4px;
+    left: 5px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+@media (min-width: 577px) {
+    .hover {
+        top: -2px;
+        right: 0;
+        bottom: 4px;
+        left: 0;
+    }
+}

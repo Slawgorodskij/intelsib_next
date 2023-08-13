@@ -1,0 +1,126 @@
+.menu {
+    padding: 15px 20px 0;
+    position: fixed;
+    top: var(--header-mobile);
+    left: -300vw;
+    height: calc(100vh - var(--header-mobile));
+    overflow-y: auto;
+    background-color: var(--color-white);
+    animation: hiding_menu 0.6s linear forwards;
+}
+
+.menu_active {
+    animation: show_menu 0.3s linear forwards;
+}
+
+.button {
+    margin-bottom: 10px;
+    padding: 14px 0;
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.list {
+    padding-left: 0;
+}
+
+.link {
+    padding: 15px 0;
+    display: block;
+    font-size: 16px;
+    color: var(--color-font);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.link_active {
+    color: var(--color-font-active);
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--color-font);
+    cursor: pointer;
+}
+
+.subtitle_active {
+    color: var(--color-font-active);
+}
+
+.content {
+    padding-left: 20px;
+    max-height: 0;
+    box-sizing: content-box;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.sub_link {
+    padding: 15px 0;
+    display: block;
+    font-size: 16px;
+    color: var(--color-font);
+}
+
+.sub_link_active {
+    color: var(--color-font-active);
+}
+
+.show {
+    height: auto;
+    max-height: 9999px;
+    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+.icon {
+    color: var(--color-font-active);
+    font-size: 22px;
+    animation: rotate_close 0.5s linear forwards;
+}
+
+.icon_active {
+    animation: rotate_open 0.5s linear forwards;
+}
+
+@keyframes show_menu {
+    0% {
+        left: -300vw;
+        width: 0;
+    }
+    100% {
+        left: 0;
+        width: 100vw;
+    }
+}
+
+@keyframes hiding_menu {
+    0% {
+        left: 0;
+        width: 100vw;
+    }
+    100% {
+        left: -300vw;
+        width: 0;
+    }
+}
+
+@keyframes rotate_open {
+    0% {
+        transform: rotateZ(0)
+    }
+    100% {
+        transform: rotateZ(-180deg);
+    }
+}
+
+@keyframes rotate_close {
+    0% {
+        transform: rotateZ(-180deg)
+    }
+    100% {
+        transform: rotateZ(0)
+    }
+}

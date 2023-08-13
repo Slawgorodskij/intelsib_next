@@ -1,0 +1,51 @@
+.wrapper {
+    position: relative;
+}
+
+.slide_elem {
+    display: flex;
+    flex-direction: column;
+}
+
+.slide_elem:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: -10px;
+    height: 100%;
+    width: 1px;
+    background-color: var(--color-border);
+}
+
+.title {
+    font-size: 13px;
+    color: var(--color-red);
+}
+
+.text {
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.icon {
+    color: #E73331;
+    font-size: 27px;
+}
+
+
+.button_prev,
+.button_next {
+    display: none;
+    position: absolute;
+    top: 6px;
+    cursor: pointer;
+}
+
+.button_prev {
+    left: -40px;
+}
+
+.button_next {
+    right: -55px
+}

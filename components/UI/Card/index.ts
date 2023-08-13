@@ -1,0 +1,1 @@
+export {Card} from '@/components/UI/Card/Card';
