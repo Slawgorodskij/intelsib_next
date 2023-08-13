@@ -39,7 +39,7 @@ export const TopFooter = () => {
                 </div>
             </div>
             <div className={styles.list}>
-                <MobileAccordion content={FooterNavLinks}/>
+                <MobileAccordion content={FooterNavLinks} flag={'footer'}/>
             </div>
 
         </div>

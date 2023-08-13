@@ -1,22 +1,26 @@
 export interface IMobileAccordion {
-    content: IFooterNav[] | IAboutDescription[],
+    content: any[],
+    flag: string,
     textStyle?: string,
     // contentFooter?: IFooterNav[],
     // contentAbout?: IAboutDescription[],
 }
 
 export interface IAccordionItem {
-    // title: string,
+    title: string,
     index: number,
     selected: number | null,
-    content: IFooterNav | IAboutDescription,
+    content: any[],
+    flag: string,
+    // contentFooter?: IFooterNav,
+    // contentAbout?: IAboutDescription,
     toggle: (index: number) => void,
     textStyle?: string,
 }
 
 interface IFooterNav {
     title: string,
-    arrayLinks: ILink[]
+    text: ILink[]
 }
 
 export interface ILink {

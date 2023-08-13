@@ -26,7 +26,7 @@ export const HeaderSliderContent = [
 ]
 export const FooterNavLinks = [
     {
-        title: 'О компании', arrayLinks: [
+        title: 'О компании', text: [
             {href: '/', key: 'link_1', text: 'Ссылка'},
             {href: '/', key: 'link_2', text: 'Ссылка'},
             {href: '/', key: 'link_3', text: 'Ссылка'},
@@ -34,7 +34,7 @@ export const FooterNavLinks = [
         ]
     },
     {
-        title: 'Услуги и цены', arrayLinks: [
+        title: 'Услуги и цены', text: [
             {href: '/', key: 'link_1', text: 'Ссылка'},
             {href: '/', key: 'link_2', text: 'Ссылка'},
             {href: '/', key: 'link_3', text: 'Ссылка'},
@@ -44,7 +44,7 @@ export const FooterNavLinks = [
         ]
     },
     {
-        title: 'Дополнительно', arrayLinks: [
+        title: 'Дополнительно', text: [
             {href: '/', key: 'link_1', text: 'Ссылка'},
             {href: '/', key: 'link_2', text: 'Ссылка'},
             {href: '/', key: 'link_3', text: 'INTELSIB: ПО ЛК'},

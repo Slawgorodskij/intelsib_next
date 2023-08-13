@@ -3,7 +3,7 @@ import {IMobileAccordion} from "@/components/UI/MobileAccordion/interface";
 import {useState} from "react";
 import {AccordionItem} from "@/components/UI/MobileAccordion/AccordionItem";
 
-export const MobileAccordion = ({content, textStyle}: IMobileAccordion) => {
+export const MobileAccordion = ({flag, content, textStyle}: IMobileAccordion) => {
     const [selected, setSelected] = useState<number | null>(0);
     const toggle = (index: number) => {
         if (selected === index) {
@@ -15,10 +15,10 @@ export const MobileAccordion = ({content, textStyle}: IMobileAccordion) => {
         <AccordionItem
             key={index}
             index={index}
-            // title={item.name}
+            title={item.title}
             selected={selected}
-            // content={item.arrayLinks}
-            content={item}
+            content={item.text}
+            flag={flag}
             toggle={toggle}
             textStyle={textStyle}
         />

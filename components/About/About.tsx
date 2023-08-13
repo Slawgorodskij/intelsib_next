@@ -15,7 +15,7 @@ export const About = () => {
             <h2 className={styles.title}>Гарантированное продвижение сайтов в топ-10</h2>
             <p className={styles.presentation}>Intelsib — рекламное агентство результативного интернет-маркетинга.</p>
             <div>
-                <MobileAccordion content={AboutDescriptionContent}/>
+                <MobileAccordion content={AboutDescriptionContent} flag={'about'}/>
             </div>
             <Swiper
                 modules={[Navigation, Pagination]}
