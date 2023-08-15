@@ -85,6 +85,12 @@
     animation: rotate_open 0.5s linear forwards;
 }
 
+@media (min-width: 577px) {
+    .menu {
+        display: none;
+    }
+}
+
 @keyframes show_menu {
     0% {
         left: -300vw;
